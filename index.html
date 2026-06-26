@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Калькулятор толщины утеплителя по СНиПам | Рассчитать онлайн бесплатно</title>
+  <meta name="description" content="Онлайн-калькулятор толщины утеплителя для стен по СНиП (СП 50.13330.2012). Учитывает регион, материал стен и тип утеплителя. Бесплатный расчёт с округлением до стандартных размеров.">
+  <meta name="keywords" content="калькулятор утеплителя, толщина утеплителя, СНиП, теплопроводность, расчёт утеплителя, минвата, пенопласт, сопротивление теплопередаче">
+  <meta name="author" content="Теплорасчёт РФ">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Калькулятор толщины утеплителя по СНиПам | Рассчитать онлайн">
+  <meta property="og:description" content="Бесплатный онлайн-расчёт толщины утеплителя по нормам СП 50.13330.2012 с учётом региона и материалов.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://example.github.io/site-name/">
+  <meta property="og:image" content="https://example.github.io/site-name/og-image.png">
+  <meta property="og:locale" content="ru_RU">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Калькулятор толщины утеплителя по СНиПам">
+  <meta name="twitter:description" content="Бесплатный расчёт толщины утеплителя онлайн по нормам СП 50.13330.2012.">
+
+  <link rel="canonical" href="https://example.github.io/site-name/">
+  <link rel="hreflang" href="https://example.github.io/site-name/">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏠</text></svg>">
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Яндекс.Метрика — вставить код счётчика -->
+  <!--
+  <script>
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    m[i].l=1*new Date();
+    for (var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
+    k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, 'script', 'https://mc.yandex.ru/metrika/tag.js', 'ym');
+    ym(00000000, 'init', { clickmap:true, trackLinks:true, accurateTrackBounce:true });
+  </script>
+  <noscript><div><img src="https://mc.yandex.ru/watch/00000000" style="position:absolute; left:-9999px;" alt=""></div></noscript>
+  -->
+
+  <!-- JSON-LD микроразметка -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Калькулятор толщины утеплителя по СНиПам",
+    "description": "Онлайн-калькулятор для расчёта толщины утеплителя стен по нормам СП 50.13330.2012",
+    "applicationCategory": "HomeApplication",
+    "operatingSystem": "All",
+    "browserRequirements": "Requires JavaScript",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "RUB"
+    },
+    "author": {
+      "@type": "Organization",
+      "name": "Теплорасчёт РФ"
+    }
+  }
+  </script>
+</head>
+<body>
+
+<!-- ХЕДЕР -->
+<header class="header">
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-icon">🏠</span>
+      Теплорасчёт РФ
+    </a>
+    <button id="nav-toggle" class="nav-toggle" aria-label="Открыть меню" aria-expanded="false">☰</button>
+    <nav id="nav" class="nav" aria-label="Основная навигация">
+      <ul class="nav-list">
+        <li><a href="index.html" class="nav-link nav-link--active">Главная</a></li>
+        <li><a href="about.html" class="nav-link">О проекте</a></li>
+        <li><a href="contacts.html" class="nav-link">Контакты</a></li>
+        <li><a href="privacy.html" class="nav-link">Политика конфиденциальности</a></li>
+        <li><a href="terms.html" class="nav-link">Пользовательское соглашение</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- ОСНОВНОЙ КОНТЕНТ -->
+<main class="main">
+
+  <!-- Хлебные крошки -->
+  <nav class="breadcrumbs" aria-label="Хлебные крошки">
+    <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+      <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a href="index.html" itemprop="item"><span itemprop="name">Главная</span></a>
+        <meta itemprop="position" content="1">
+      </li>
+      <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" aria-current="page">
+        <span itemprop="name" class="breadcrumbs-current">Калькулятор толщины утеплителя</span>
+        <meta itemprop="position" content="2">
+      </li>
+    </ol>
+  </nav>
+
+  <!-- ЗАГОЛОВОК -->
+  <h1 class="page-title">Калькулятор толщины утеплителя по СНиПам</h1>
+  <p class="page-subtitle">Рассчитайте необходимую толщину теплоизоляции для стен вашего дома в соответствии с нормами СП 50.13330.2012. Укажите регион, материал и толщину стены, тип утеплителя — калькулятор покажет, нужен ли утеплитель и какой толщины.</p>
+
+  <!-- КАЛЬКУЛЯТОР -->
+  <section class="calculator-section" aria-label="Калькулятор толщины утеплителя">
+    <div class="calculator">
+      <form class="calculator-form" id="calc-form" novalidate>
+        <!-- Регион -->
+        <div class="calc-field">
+          <label class="calc-label" for="calc-region">Регион <span class="required">*</span></label>
+          <select id="calc-region" class="calc-select" aria-required="true" aria-describedby="calc-error-region"></select>
+          <div id="calc-error-region" class="calc-error" role="alert"></div>
+        </div>
+
+        <!-- Материал стены -->
+        <div class="calc-field">
+          <label class="calc-label" for="calc-wall">Материал стены <span class="required">*</span></label>
+          <select id="calc-wall" class="calc-select" aria-required="true" aria-describedby="calc-error-wall"></select>
+          <div id="calc-error-wall" class="calc-error" role="alert"></div>
+        </div>
+
+        <!-- Толщина стены -->
+        <div class="calc-field">
+          <label class="calc-label" for="calc-thickness">Толщина стены (мм) <span class="required">*</span></label>
+          <input type="number" id="calc-thickness" class="calc-input" min="50" max="2000" placeholder="Например: 400" aria-required="true" aria-describedby="calc-error-thickness">
+          <div id="calc-error-thickness" class="calc-error" role="alert"></div>
+        </div>
+
+        <!-- Тип утеплителя -->
+        <div class="calc-field">
+          <label class="calc-label" for="calc-insulation">Тип утеплителя <span class="required">*</span></label>
+          <select id="calc-insulation" class="calc-select" aria-required="true" aria-describedby="calc-error-insulation"></select>
+          <div id="calc-error-insulation" class="calc-error" role="alert"></div>
+        </div>
+
+        <!-- Кнопка -->
+        <button type="submit" id="calc-btn" class="calc-btn">Рассчитать толщину</button>
+      </form>
+
+      <!-- Место под рекламу №1 -->
+      <div id="yandex-rsb-1" class="ad-placeholder" data-ad-format="horizontal" style="min-height:90px; text-align:center; margin:20px 0;">
+        <!-- Сюда вставить код РСЯ -->
+        <span>Рекламное место</span>
+      </div>
+
+      <!-- РЕЗУЛЬТАТ -->
+      <div id="result-block" class="result-block" role="region" aria-live="polite" aria-label="Результат расчёта">
+        <div id="result-card" class="result-card"></div>
+        <div id="result-details" class="result-details" style="display:none;">
+          <h3>Подробный расчёт</h3>
+          <div class="detail-rows"></div>
+        </div>
+      </div>
+
+      <!-- Сообщение об ошибке (общее) -->
+      <div id="calc-error" class="calc-error" role="alert" style="margin-top:12px;"></div>
+    </div>
+  </section>
+
+  <!-- SEO-КОНТЕНТ -->
+  <section aria-label="Как работает калькулятор">
+    <h2>Как работает калькулятор</h2>
+    <p>Калькулятор рассчитывает толщину утеплителя на основе требований СП 50.13330.2012 «Тепловая защита зданий». Для каждого региона России установлено нормативное значение сопротивления теплопередаче (R, м²·°C/Вт). Чем холоднее климат, тем выше это значение.</p>
+    <p>Формула расчёта простая:</p>
+    <p><strong>Шаг 1.</strong> Вычисляем сопротивление теплопередаче вашей стены: <code>R_стены = толщина_стены_в_метрах ÷ теплопроводность_материала</code></p>
+    <p><strong>Шаг 2.</strong> Сравниваем с нормативом для вашего региона. Если сопротивление стены больше или равно норме — утеплитель не нужен.</p>
+    <p><strong>Шаг 3.</strong> Если стена не дотягивает до нормы, вычисляем недостающее сопротивление: <code>R_нужно = R_нормы − R_стены</code></p>
+    <p><strong>Шаг 4.</strong> Умножаем недостающее сопротивление на теплопроводность выбранного утеплителя и получаем необходимую толщину в метрах. Переводим в миллиметры и округляем до стандартного размера (50, 100, 150 или 200 мм).</p>
+  </section>
+
+  <!-- ТАБЛИЦА НОРМ ПО РЕГИОНАМ -->
+  <section aria-label="Таблица норм сопротивления теплопередаче">
+    <h2>Таблица норм тепло сопротивления по регионам РФ</h2>
+    <p>Нормативные значения сопротивления теплопередаче для стен жилых зданий согласно СП 50.13330.2012:</p>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Город / Регион</th>
+            <th>Норма R (м²·°C/Вт)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Сочи</td><td>2.01</td></tr>
+          <tr><td>Краснодар</td><td>2.44</td></tr>
+          <tr><td>Ростов-на-Дону</td><td>2.63</td></tr>
+          <tr><td>Волгоград</td><td>2.83</td></tr>
+          <tr><td>Москва</td><td>3.06</td></tr>
+          <tr><td>Санкт-Петербург</td><td>3.08</td></tr>
+          <tr><td>Воронеж</td><td>3.09</td></tr>
+          <tr><td>Владивосток</td><td>3.25</td></tr>
+          <tr><td>Самара</td><td>3.31</td></tr>
+          <tr><td>Нижний Новгород</td><td>3.31</td></tr>
+          <tr><td>Казань</td><td>3.36</td></tr>
+          <tr><td>Уфа</td><td>3.48</td></tr>
+          <tr><td>Челябинск</td><td>3.48</td></tr>
+          <tr><td>Екатеринбург</td><td>3.51</td></tr>
+          <tr><td>Пермь</td><td>3.51</td></tr>
+          <tr><td>Тюмень</td><td>3.51</td></tr>
+          <tr><td>Новосибирск</td><td>3.65</td></tr>
+          <tr><td>Красноярск</td><td>3.68</td></tr>
+          <tr><td>Иркутск</td><td>3.73</td></tr>
+          <tr><td>Мурманск</td><td>4.05</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>* Значения приведены для стен жилых и общественных зданий. Для производственных зданий нормы могут отличаться. Актуальные данные уточняйте в СП 50.13330.2012.</p>
+  </section>
+
+  <!-- ТАБЛИЦА МАТЕРИАЛОВ СТЕН -->
+  <section aria-label="Теплопроводность строительных материалов">
+    <h2>Теплопроводность строительных материалов</h2>
+    <p>Коэффициент теплопроводности (λ, Вт/(м·°C)) показывает, сколько тепла проходит через материал толщиной 1 м при разнице температур 1°C. Чем меньше значение, тем лучше материал удерживает тепло.</p>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Материал</th>
+            <th>λ (Вт/(м·°C))</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>СИП-панель</td><td>0.038</td></tr>
+          <tr><td>Каркасная стена с утеплителем</td><td>0.052</td></tr>
+          <tr><td>Газобетон D400</td><td>0.10</td></tr>
+          <tr><td>Газобетон D500</td><td>0.12</td></tr>
+          <tr><td>Газобетон D600</td><td>0.14</td></tr>
+          <tr><td>Пенобетон D600</td><td>0.14</td></tr>
+          <tr><td>Брус клеёный</td><td>0.16</td></tr>
+          <tr><td>Дерево (сосна поперёк волокон)</td><td>0.18</td></tr>
+          <tr><td>Пенобетон D800</td><td>0.21</td></tr>
+          <tr><td>Кирпич керамический пустотелый</td><td>0.52</td></tr>
+          <tr><td>Керамзитобетон</td><td>0.55</td></tr>
+          <tr><td>Шлакоблок</td><td>0.60</td></tr>
+          <tr><td>Кирпич красный полнотелый</td><td>0.70</td></tr>
+          <tr><td>Кирпич силикатный</td><td>0.76</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ТАБЛИЦА УТЕПЛИТЕЛЕЙ -->
+  <section aria-label="Теплопроводность утеплителей">
+    <h2>Теплопроводность популярных утеплителей</h2>
+    <p>Современные теплоизоляционные материалы и их теплопроводность:</p>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Материал</th>
+            <th>λ (Вт/(м·°C))</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>PIR-плиты</td><td>0.023</td></tr>
+          <tr><td>Пенополиуретан (ППУ)</td><td>0.025</td></tr>
+          <tr><td>Экструдированный пенополистирол (XPS)</td><td>0.030</td></tr>
+          <tr><td>Пенопласт ПСБ-С 35</td><td>0.037</td></tr>
+          <tr><td>Пенопласт ПСБ-С 25</td><td>0.039</td></tr>
+          <tr><td>Минеральная вата (базальтовая)</td><td>0.040</td></tr>
+          <tr><td>Эковата</td><td>0.040</td></tr>
+          <tr><td>Пенопласт ПСБ-С 15</td><td>0.042</td></tr>
+          <tr><td>Минеральная вата (стекловата)</td><td>0.044</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- РЕКОМЕНДАЦИИ -->
+  <section aria-label="Рекомендации по выбору утеплителя">
+    <h2>Рекомендации по выбору утеплителя</h2>
+    <ul class="tips-list">
+      <li><strong>Для стен снаружи</strong> лучше всего подходят минеральная вата (базальтовая) и пенополистирол (ПСБ-С 25 или XPS). Минеральная вата негорючая и паропроницаемая, пенополистирол дешевле и проще в монтаже.</li>
+      <li><strong>Для каркасных домов</strong> оптимальный выбор — минеральная вата в плитах. Она обеспечивает дополнительную звукоизоляцию и не поддерживает горение.</li>
+      <li><strong>PIR-плиты</strong> — самый эффективный утеплитель с минимальной теплопроводностью. Требуют меньшей толщины при той же теплоизоляции, но стоят дороже.</li>
+      <li><strong>Эковата</strong> — экологичный вариант для частных домов. Наносится методом напыления, заполняет все щели, но требует специального оборудования.</li>
+      <li><strong>Пенополиуретан (ППУ)</strong> — отличный выбор для сложных конструкций. Напыление создаёт бесшовное покрытие без мостиков холода.</li>
+      <li><strong>Не забывайте про пароизоляцию</strong> — при использовании минеральной ваты со стороны помещения нужна пароизоляционная плёнка, чтобы утеплитель не отсырел.</li>
+      <li><strong>Всегда делайте запас 10–15%</strong> — даже точные расчёты не учитывают все особенности конкретного здания. Лучше взять утеплитель чуть толще, чем замёрзнуть зимой.</li>
+    </ul>
+  </section>
+
+  <!-- FAQ -->
+  <section aria-label="Часто задаваемые вопросы">
+    <h2>Частые вопросы</h2>
+
+    <div class="faq-list" itemscope itemtype="https://schema.org/FAQPage">
+      <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <button class="faq-question" aria-expanded="false" itemprop="name" id="faq-q1" aria-controls="faq-a1">Нужен ли утеплитель для газобетона 400 мм?<span class="faq-icon">+</span></button>
+        <div class="faq-answer" id="faq-a1" role="region" aria-labelledby="faq-q1" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <p itemprop="text">Для большинства регионов России стена из газобетона D400 толщиной 400 мм даёт сопротивление порядка 4 м²·°C/Вт. Этого достаточно для Москвы и южнее, но для Сибири и северных регионов может потребоваться дополнительное утепление. Воспользуйтесь нашим калькулятором для точного расчёта именно под ваш регион.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <button class="faq-question" aria-expanded="false" itemprop="name" id="faq-q2" aria-controls="faq-a2">Какой утеплитель лучше: минвата или пенопласт?<span class="faq-icon">+</span></button>
+        <div class="faq-answer" id="faq-a2" role="region" aria-labelledby="faq-q2" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <p itemprop="text">Оба материала имеют плюсы и минусы. Минеральная вата негорючая, паропроницаемая, обеспечивает звукоизоляцию, но дороже и боится влаги. Пенопласт дешевле, не боится воды, проще монтируется, но горюч (хотя современные марки содержат антипирены). Выбор зависит от конструкции стен, бюджета и требований пожарной безопасности.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <button class="faq-question" aria-expanded="false" itemprop="name" id="faq-q3" aria-controls="faq-a3">Можно ли использовать калькулятор для каркасного дома?<span class="faq-icon">+</span></button>
+        <div class="faq-answer" id="faq-a3" role="region" aria-labelledby="faq-q3" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <p itemprop="text">Да, калькулятор подходит и для каркасных домов. В списке материалов есть «Каркасная стена с утеплителем» — это стандартный пирог каркасного дома. Однако учтите, что в каркасном доме утеплитель закладывается внутрь каркаса, и подбирать его толщину нужно с учётом сечения стоек.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <button class="faq-question" aria-expanded="false" itemprop="name" id="faq-q4" aria-controls="faq-a4">Насколько точен расчёт?<span class="faq-icon">+</span></button>
+        <div class="faq-answer" id="faq-a4" role="region" aria-labelledby="faq-q4" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <p itemprop="text">Расчёт является ознакомительным и основан на данных из СП 50.13330.2012. Он даёт корректную оценку для стандартных условий. Для точного проектирования необходимо учитывать множество факторов: влажностный режим, ветровые нагрузки, материалы отделки, наличие мостиков холода, конструктивные особенности. Рекомендуем обращаться к профессиональным проектировщикам для получения точных расчётов.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Место под рекламу №2 -->
+  <div id="yandex-rsb-2" class="ad-placeholder" data-ad-format="horizontal" style="min-height:90px; text-align:center; margin:20px 0;">
+    <!-- Сюда вставить код РСЯ -->
+    <span>Рекламное место</span>
+  </div>
+
+  <!-- ПРЕДУПРЕЖДЕНИЕ -->
+  <section aria-label="Важное предупреждение">
+    <h2>Важное предупреждение</h2>
+    <div class="disclaimer-box">
+      <strong>⚠ Внимание:</strong> Данный калькулятор предназначен для ознакомительных и предварительных расчётов. Результаты не являются официальным проектным решением. Для получения точных значений и проектной документации необходимо обращаться к квалифицированным специалистам с учётом всех особенностей вашего здания. Администрация сайта не несёт ответственности за любые решения, принятые на основе результатов расчёта.
+    </div>
+  </section>
+
+</main>
+
+<!-- ФУТЕР -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-col">
+      <h4>Теплорасчёт РФ</h4>
+      <p>Онлайн-калькулятор толщины утеплителя по нормам СП 50.13330.2012. Помогаем строителям и владельцам домов правильно подобрать теплоизоляцию с учётом региона и материалов.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Разделы</h4>
+      <div class="footer-links">
+        <a href="index.html">Главная</a>
+        <a href="about.html">О проекте</a>
+        <a href="contacts.html">Контакты</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Информация</h4>
+      <div class="footer-links">
+        <a href="privacy.html">Политика конфиденциальности</a>
+        <a href="terms.html">Пользовательское соглашение</a>
+        <a href="404.html">Страница 404</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; <span id="footer-year">2025</span> Теплорасчёт РФ. Все права защищены.</span>
+    <span>Сделано в России | 2026</span>
+    <span>Email: <a href="mailto:curssor1@gmail.com">curssor1@gmail.com</a></span>
+  </div>
+</footer>
+
+<!-- COOKIE-УВЕДОМЛЕНИЕ -->
+<div id="cookie-notice" class="cookie-notice" role="alert" aria-label="Уведомление о cookie">
+  <div class="cookie-inner">
+    <p class="cookie-text">
+      Мы используем файлы cookie для работы сайта и сбора анонимной статистики. Продолжая пользоваться сайтом, вы соглашаетесь с 
+      <a href="privacy.html">политикой обработки персональных данных</a>.
+    </p>
+    <button id="cookie-accept" class="cookie-btn">Принять</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

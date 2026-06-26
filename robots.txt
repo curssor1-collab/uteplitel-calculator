@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+Disallow: /cgi-bin/
+
+Sitemap: https://example.github.io/site-name/sitemap.xml
+
+# Для Яндекса отдельно
+User-agent: Yandex
+Allow: /
+Clean-param: utm_source&utm_medium&utm_campaign
