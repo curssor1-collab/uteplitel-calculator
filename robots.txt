@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 Disallow: /cgi-bin/
 
-Sitemap: https://example.github.io/site-name/sitemap.xml
+Sitemap: https://curssor1-collab.github.io/uteplitel-calculator/sitemap.xml
 
 # Для Яндекса отдельно
 User-agent: Yandex
