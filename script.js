@@ -321,7 +321,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
-  // Форма обратной связи (заглушка)
+  // Форма обратной связи (открывает почтовый клиент через mailto)
   const contactForm = document.getElementById('contact-form');
   if (contactForm) {
     contactForm.addEventListener('submit', function(e) {
@@ -347,7 +347,15 @@ document.addEventListener('DOMContentLoaded', function() {
         return;
       }
 
-      alert('Спасибо! Ваше сообщение отправлено. Мы ответим вам в течение 48 часов.');
+      const subject = encodeURIComponent('Сообщение с сайта Теплорасчёт РФ');
+      const body = encodeURIComponent(
+        'Имя: ' + name + '\n' +
+        'Email: ' + email + '\n\n' +
+        'Сообщение:\n' + msg
+      );
+      window.location.href = 'mailto:curssor1@gmail.com?subject=' + subject + '&body=' + body;
+
+      alert('Спасибо! Письмо открыто в вашем почтовом клиенте. Мы ответим вам в течение 48 часов.');
       contactForm.reset();
     });
   }
